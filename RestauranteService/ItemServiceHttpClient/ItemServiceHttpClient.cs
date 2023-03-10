@@ -28,7 +28,7 @@ namespace RestauranteService.Data
                 "application/json"
             );
             
-            await _client.PostAsync( "https://localhost:5000/api/item/restaurante", content);
+            await _client.PostAsync( "http://item-service/api/item/restaurante", content);
         }
     }
 }
